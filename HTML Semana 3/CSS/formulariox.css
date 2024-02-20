@@ -1,0 +1,65 @@
+html{
+    font-size: 16px;
+    font-family: sans-serif;/* tipo de letra/fuente */
+}
+body{
+    background-color: aqua;
+}
+/* aplicar estilos a la clase igual= "contenedor" */
+.contenedor{
+    max-width: 450px;
+    height: auto;
+    background-color: coral;
+    margin: 5% auto;/* centrar contenedor en doc web */
+    padding-bottom: 16px;
+}
+header{
+    width:100%;
+    text-align:center ; /* centrar texto */
+    padding: 10px 0 5px;
+    border-top: solid 8px black;
+    margin-bottom: 5px;
+}
+header h2{
+    font-weight: bold; /* negrilla */
+    color: black;
+    font-size: 18px;/* tamaño de fuente */
+}
+.form_register{
+    padding: 0 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;/* alinear horizontal */
+    align-content: center;/* alinear vertical */
+    background-color: silver; /* color de fondo */
+}
+.btn_accion{
+    display: flex;
+    justify-content: space-around;/* alinear horizontal */
+    margin-top: 16px;
+}
+input, .btn_enviar, .btn_limpiar{
+    background-color: whitesmoke;
+    padding: 8px;
+    margin: 8px 0;
+    outline: none; /* quitar bordes de color negro */
+    transition: all .5s;/* efecto de animacion en delay */
+}
+.btn_enviar, .btn_limpiar{
+    width: 40%;
+    border-radius: 20px;/* bordes redondeados */
+    background-color: lightseagreen;
+    color: white;
+    margin-left: 25px;
+}
+/* evento de un css focus es al dar click en el control de form */
+input:focus{
+    background-color: lightcyan;
+    border-color: darkblue;
+}
+#terminos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
